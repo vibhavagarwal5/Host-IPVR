@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>IPVR</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="static/upload.css">
+	<!--jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading" style="text-align: center;"><h3>Pothole Detection</h3></div>
+			<div class="panel-body">
+				<div class="col-lg-6 col-xs-12">
+					<h4>Select files from your computer</h4>
+					<form action="{{url_for('uploader')}}" method="post" enctype="multipart/form-data" id="js-upload-form">
+						<div class="form-inline">
+							<div class="form-group">
+								<input type="file" name="file" id="js-upload-files" multiple>
+							</div>
+							<button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+						</div>
+					</form>
+				</div>
+				{% if result!=None and result!="no file" and result!="wrong ext" %}
+				<div class="col-lg-6 col-xs-12" style="text-align: center;">
+					<div class="col-lg-12 col-md-8">
+						<div class="thumbnail">
+							<img src="/static/img_uploads/{{result.file_name}}" alt="">
+							<div class="caption">
+								<h4>{{result['file_name']}}</h4>
+								<p><b>Class:</b> {{result['class']}}</p>
+								<p><b>Score:</b> {{result['score']}}</p>
+								
+								<p>
+									<a href = "/" class = "btn btn-primary" role = "button">Reset</a>
+								</p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endif %}
+
+				{% if result=="no file" %}
+				<script>
+				    alert("Please enter some file!");
+				</script>
+				{% endif %}
+
+				{% if result=="wrong ext" %}
+				<script>
+				    alert("Please enter files with extension: 'png', 'jpg', 'jpeg'");
+				</script>
+				{% endif %}
+
+				<!-- Drop Zone
+				<h4>Or drag and drop files below</h4>
+				<div class="upload-drop-zone" id="drop-zone">
+					Just drag and drop files here
+				</div>
+				
+				Progress Bar 
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+						<span class="sr-only">60% Complete</span>
+					</div>
+				</div>
+
+				Upload Finished
+				<div class="js-upload-finished">
+					<h3>Processed files</h3>
+					<div class="list-group">
+						<div href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-01.jpg</div>
+					</div>
+				</div>
+				-->
+			</div>
+		</div>
+	</div>
+	<script>
+	</script>
+</body>
+
+</html>
