@@ -1,4 +1,0 @@
-Werkzeug==0.11.10
-Flask==0.11.1
-Jinja2==2.8
-watson-developer-cloud==0.26.0
