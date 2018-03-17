@@ -46,7 +46,7 @@ def uploader():
 	filename = save_image(latitude, longitude, pitch, heading)
 
 	with open(os.path.join(app.config['UPLOAD_FOLDER'], filename), 'rb') as image_file:
-		info = visual_recognition.classify(images_file = image_file, classifier_ids = 'pothole_967824303', threshold = 0.23)
+		info = visual_recognition.classify(images_file = image_file, classifier_ids = 'Potholedetector_995527067', threshold = 0.23)
 		data = getInfo(info)
 		try:
 			image_data={'file_name':filename,'class':data[1][0],'score':str(data[1][1])}
