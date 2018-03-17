@@ -1,39 +1,63 @@
+/*
 .upload-drop-zone {
-  height: 200px;
-  border-width: 2px;
-  margin-bottom: 20px;
+	height: 200px;
+	border-width: 2px;
+	margin-bottom: 20px;
 }
 
 .upload-drop-zone {
-  color: #ccc;
-  border-style: dashed;
-  border-color: #ccc;
-  line-height: 200px;
-  text-align: center
+	color: #ccc;
+	border-style: dashed;
+	border-color: #ccc;
+	line-height: 200px;
+	text-align: center
 }
 .upload-drop-zone.drop {
-  color: #222;
-  border-color: #222;
+	color: #222;
+	border-color: #222;
 }
+*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic);
 
 font-family: 'Open Sans', sans-serif;
 
 html {
-  font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 body {
-  padding-top: 40px;
-  font-family: 'Open Sans', sans-serif;
+	padding-top: 40px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .thumbnail {
-    position: relative;
-    padding: 0px;
-    margin-bottom: 20px;
+	position: relative;
+	padding: 0px;
+	margin-bottom: 20px;
 }
 
 .thumbnail img {
-    width: 100%;
+	width: 100%;
 }
+
+label {
+	width:120px;
+	clear:left;
+	text-align:left;
+	padding-right:10px;
+}
+
+.resizedTextbox {
+	width: 30%;
+	height: 20%;
+}
+
+#map {
+	position: absolute;
+	height: 40%;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 2%;
+
+}
+

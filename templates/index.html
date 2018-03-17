@@ -6,6 +6,7 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="static/upload.css">
+	<link rel="stylesheet" type="text/css" href="static/standard.css">
 	<!--jQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -13,39 +14,25 @@
 <body>
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><strong>Upload Files</strong></div>
+			<div class="panel-heading"><strong>Set Coordinates</strong></div>
 			<div class="panel-body">
-				<!-- Standar Form -->
-				<h4>Select files from your computer</h4>
-				<form action="{{url_for('uploader')}}" method="post" enctype="multipart/form-data" id="js-upload-form">
+				<!-- Standard Form -->
+				<h4>Coordinates</h4>
+				<form action="{{url_for('uploader')}}" method="post">
 					<div class="form-inline">
 						<div class="form-group">
-							<input type="file" name="file" id="js-upload-files" multiple>
+							<label for="latitude">Latitude</label>
+							<input type="number" class="resizedTextbox" step = "0.000001" name="latitude" min="-90" max="90" id="latitude"><br>
+							<label for="longitude">Longitude</label>
+							<input type="number" class="resizedTextbox" step = "0.000001" name="longitude" min="-180" max="180" id="longitude"><br>
+							<label for="pitch">Pitch</label>
+							<input type="number" class="resizedTextbox" value=-30 step = "0.01" name="pitch" min="-90" max="90" id="pitch"><br>
+							<label for="heading">Heading</label>
+							<input type="number" class="resizedTextbox" value=0 step = "0.01" name="heading" id="heading"><br>
 						</div>
-						<button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+						<button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Submit coordinates</button>
 					</div>
 				</form>
-				<!-- Drop Zone
-				<h4>Or drag and drop files below</h4>
-				<div class="upload-drop-zone" id="drop-zone">
-					Just drag and drop files here
-				</div>
-				
-				Progress Bar 
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-						<span class="sr-only">60% Complete</span>
-					</div>
-				</div>
-
-				Upload Finished
-				<div class="js-upload-finished">
-					<h3>Processed files</h3>
-					<div class="list-group">
-						<div href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-01.jpg</div>
-					</div>
-				</div>
-				-->
 			</div>
 		</div>
 	</div>
