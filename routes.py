@@ -6,7 +6,7 @@ import urllib
 
 # Initialize the Flask application
 app = Flask(__name__)
-visual_recognition = VisualRecognitionV3('2017-07-01', api_key = 'f2fbfa38ca877dadbbaf9e8e3d04ac9dff33ccc5')
+visual_recognition = VisualRecognitionV3('2017-07-01', api_key = 'df264a51547839277a3c59d672c1593def3009a1')
 
 # This is the path to the upload directory
 app.config['UPLOAD_FOLDER'] = os.path.join(os.path.dirname(os.path.realpath(__file__)), os.path.join('static', 'img_uploads'))
@@ -26,7 +26,7 @@ def getInfo(data):
 def save_image(latitude, longitude, pitch = -30, heading = 0):
 	filename = str(latitude) + "_" + str(longitude) + "_"+ str(pitch)+ "_" + str(heading)+".jpg"
 	f = open(os.path.join(app.config['UPLOAD_FOLDER'], filename), 'wb')
-	f.write(urllib.urlopen('https://maps.googleapis.com/maps/api/streetview?size=600x300&location='+str(latitude)+','+str(longitude)+'&heading='+str(heading)+'&pitch='+str(pitch)+'&key=AIzaSyARJzaHl2Do0gPv2N1vvK88jVpxzWdqahk').read())
+	f.write(urllib.urlopen('https://maps.googleapis.com/maps/api/streetview?size=600x300&location='+str(latitude)+','+str(longitude)+'&heading='+str(heading)+'&pitch='+str(pitch)+'&key=AIzaSyDAg6VivTbhqj7tuS85rg1fpI1iqoOFWcU').read())
 	f.close()
 	return filename
 
