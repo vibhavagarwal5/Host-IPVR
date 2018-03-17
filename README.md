@@ -1,0 +1,11 @@
+• Latitude : 41.750791337697564, Longitude : -87.59532922991751, Pitch : -45, Heading : 0
+• Latitude : 41.9209159784344, Longitude : -87.72681716571067, Pitch : -60, Heading : 0
+• Latitude : 41.89729779454106, Longitude : -87.72506334574346, Pitch : -50, Heading : 270
+• Latitude : 41.864516820382946, Longitude : -87.70325089784822, Pitch : -45, Heading : 90
+• Latitude : 41.9033282, Longitude : -87.66741033, Pitch : -20, Heading : 60
+• Latitude : 41.9033282, Longitude : -87.66741033, Pitch : -40, Heading : 0
+• Latitude : 41.9032983, Longitude : -87.66770433, Pitch : -40, Heading : 0
+• Latitude : 41.9047656, Longitude : -87.64302023, Pitch : -30, Heading : 90
+• Latitude : 41.9044623, Longitude : -87.64195363, Pitch : -30, Heading : 150
+• Latitude : 41.9689247, Longitude : -87.7490793, Pitch : -45, Heading : 90
+• Latitude : 41.9689217, Longitude : -87.74920323, Pitch : -45, Heading : 0
