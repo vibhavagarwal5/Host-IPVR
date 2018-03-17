@@ -7,14 +7,58 @@ The pothole detector is built in Python with Flask as its web framework. It uses
 https://drive.google.com/open?id=0B7Zefvy_mkNwMUtfcnFhX3BOeUk
 
 ### Test Locations:
-• **Latitude** : 41.750791337697564, **Longitude** : -87.59532922991751, **Pitch** : -45, **Heading** : 0 <br>
-• **Latitude** : 41.9209159784344, **Longitude** : -87.72681716571067, **Pitch** : -60, **Heading** : 0 <br>
-• **Latitude** : 41.89729779454106, **Longitude** : -87.72506334574346, **Pitch** : -50, **Heading** : 270 <br>
-• **Latitude** : 41.864516820382946, **Longitude** : -87.70325089784822, **Pitch** : -45, **Heading** : 90 <br>
-• **Latitude** : 41.9033282, **Longitude** : -87.66741033, **Pitch** : -20, **Heading** : 60 <br>
-• **Latitude** : 41.9033282, **Longitude** : -87.66741033, **Pitch** : -40, **Heading** : 0 <br>
-• **Latitude** : 41.9032983, **Longitude** : -87.66770433, **Pitch** : -40, **Heading** : 0 <br>
-• **Latitude** : 41.9047656, **Longitude** : -87.64302023, **Pitch** : -30, **Heading** : 90 <br>
-• **Latitude** : 41.9044623, **Longitude** : -87.64195363, **Pitch** : -30, **Heading** : 150 <br>
-• **Latitude** : 41.9689247, **Longitude** : -87.7490793, **Pitch** : -45, **Heading** : 90 <br>
-• **Latitude** : 41.9689217, **Longitude** : -87.74920323, **Pitch** : -45, **Heading** : 0 <br>
+• **Latitude** : 41.750791337697564
+<br> **Longitude** : -87.59532922991751
+ <br> **Pitch** : -45
+  <br> **Heading** : 0 <br>
+  
+• **Latitude** : 41.9209159784344
+<br> **Longitude** : -87.72681716571067
+ <br> **Pitch** : -60
+  <br> **Heading** : 0 <br>
+  
+• **Latitude** : 41.89729779454106
+<br> **Longitude** : -87.72506334574346
+ <br> **Pitch** : -50
+  <br> **Heading** : 270 <br>
+  
+• **Latitude** : 41.864516820382946
+<br> **Longitude** : -87.70325089784822
+ <br> **Pitch** : -45
+  <br> **Heading** : 90 <br>
+  
+• **Latitude** : 41.9033282
+<br> **Longitude** : -87.66741033
+ <br> **Pitch** : -20
+  <br> **Heading** : 60 <br>
+  
+• **Latitude** : 41.9033282
+<br> **Longitude** : -87.66741033
+ <br> **Pitch** : -40
+  <br> **Heading** : 0 <br>
+  
+• **Latitude** : 41.9032983
+<br> **Longitude** : -87.66770433
+ <br> **Pitch** : -40
+  <br> **Heading** : 0 <br>
+  
+• **Latitude** : 41.9047656
+<br> **Longitude** : -87.64302023
+ <br> **Pitch** : -30
+  <br> **Heading** : 90 <br>
+  
+• **Latitude** : 41.9044623
+<br> **Longitude** : -87.64195363
+ <br> **Pitch** : -30
+  <br> **Heading** : 150 <br>
+  
+• **Latitude** : 41.9689247
+<br> **Longitude** : -87.7490793
+ <br> **Pitch** : -45
+  <br> **Heading** : 90 <br>
+  
+• **Latitude** : 41.9689217
+<br> **Longitude** : -87.74920323
+ <br> **Pitch** : -45
+  <br> **Heading** : 0 <br>
+  
