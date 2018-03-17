@@ -6,7 +6,7 @@ import urllib
 
 # Initialize the Flask application
 app = Flask(__name__)
-visual_recognition = VisualRecognitionV3('2017-07-01', api_key = 'df264a51547839277a3c59d672c1593def3009a1')
+visual_recognition = VisualRecognitionV3('2018-03-16', api_key = 'df264a51547839277a3c59d672c1593def3009a1')
 
 # This is the path to the upload directory
 app.config['UPLOAD_FOLDER'] = os.path.join(os.path.dirname(os.path.realpath(__file__)), os.path.join('static', 'img_uploads'))
